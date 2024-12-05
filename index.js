@@ -8,8 +8,8 @@ const ethers = require('ethers');
 const abi = require('./abi.json');
 
 // Web3 Configuration
-const provider = new ethers.JsonRpcProvider('https://sepolia-rollup.arbitrum.io/rpc');
-const contractAddress = '0xE584aaF086Cb449b724801648dFb67055376Fdd3';
+const provider = new ethers.JsonRpcProvider('https://eth-mainnet.g.alchemy.com/v2/ngGcydhhMHgnUG8uThMl7osVVVOM0u1S');
+const contractAddress = '0xB09F884d48543ee12Ebbeb0E565FdECc8077EC32';
 const contractABI = abi;
 const contract = new ethers.Contract(contractAddress, contractABI, provider);
 
